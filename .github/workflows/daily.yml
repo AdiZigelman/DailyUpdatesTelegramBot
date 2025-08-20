@@ -2,7 +2,7 @@ name: Daily Info Agent
 
 on:
   schedule:
-    - cron: "0 5 * * *"  # כל יום ב-08:00 שעון ישראל (5:00 UTC)
+    - cron: "0 11 * * *"  # כל יום ב-08:00 שעון ישראל (5:00 UTC)
   workflow_dispatch:
 
 jobs:
