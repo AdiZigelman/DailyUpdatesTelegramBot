@@ -1,49 +1,80 @@
 # Daily Info Agent 🤖
 
-בוט טלגרם ששולח לך כל בוקר הודעה עם:
-- מזג האוויר היום 🌤
-- חדשות מאתמול 📰
-- בדיחה יומית 💡
+**Daily Info Agent** is a Telegram bot that kickstarts your day with a concise morning update, including:
 
-### איך זה עובד?
-הפרויקט רץ אוטומטית בכל בוקר בעזרת **GitHub Actions** ושולח הודעה דרך **Telegram Bot API**.
+- 🌤 Today's weather  
+- 📰 Top news headlines from yesterday  
+- 💡 A daily joke  
 
-### טכנולוגיות
-- Python
-- Requests
-- python-telegram-bot
-- OpenWeatherMap API
-- NewsAPI
-- official-joke-api
+The bot runs automatically every morning using **GitHub Actions** and delivers the updates directly to your Telegram.
 
-### התקנה מהירה
-1. **התקן תלויות:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-2. **הגדר API Keys** (ראה `SETUP.md` לפרטים מלאים):
-   - Telegram Bot Token
-   - OpenWeatherMap API Key
-   - NewsAPI Key
-   - Chat ID שלך
+## Features
+- Daily weather updates using **OpenWeatherMap API**  
+- News headlines powered by **NewsAPI**  
+- Daily jokes from the **official-joke-api**  
+- Fully automated scheduling with **GitHub Actions**  
+- Easy setup with environment variables for sensitive keys  
 
-3. **הרץ את הבוט:**
-   ```bash
-   python daily_agent.py
-   ```
+---
 
-### הגדרה מפורטת
-ראה את הקובץ `SETUP.md` להנחיות מפורטות על:
-- איך לקבל API Keys
-- איך למצוא את Chat ID שלך
-- איך להגדיר Environment Variables
-- פתרון בעיות נפוצות
+## Technologies
+- Python  
+- `requests`  
+- `python-telegram-bot`  
+- OpenWeatherMap API  
+- NewsAPI  
+- official-joke-api  
 
-### שימוש ב-GitHub Actions
-- שמרי את ה-Secrets:
-  - TELEGRAM_TOKEN
-  - CHAT_ID
-  - WEATHER_API_KEY
-  - NEWS_API_KEY
-- הבוט ירוץ אוטומטית כל יום ב-08:00 שעון ישראל 🎉
+---
+
+## Quick Start
+
+1. **Clone the repository and install dependencies:**
+```bash
+git clone https://github.com/AdiZigelman/DailyUpdatesTelegramBot.git
+cd DailyUpdatesTelegramBot
+pip install -r requirements.txt
+```
+
+2. **Set up your API Keys** (see `SETUP.md` for detailed instructions):  
+   - Telegram Bot Token  
+   - OpenWeatherMap API Key  
+   - NewsAPI Key  
+   - Your Telegram Chat ID  
+
+3. **Run the bot locally:**
+```bash
+python daily_agent.py
+```
+
+---
+
+## GitHub Actions Automation
+
+The bot can run automatically every day using GitHub Actions:
+
+- Add the following **Secrets** to your repository:  
+  - `TELEGRAM_TOKEN`  
+  - `CHAT_ID`  
+  - `WEATHER_API_KEY`  
+  - `NEWS_API_KEY`  
+
+- The workflow is scheduled to run daily at **08:00 Israel time**.  
+
+---
+
+## Detailed Setup
+
+Refer to `SETUP.md` for detailed instructions on:  
+- Obtaining API keys  
+- Finding your Telegram Chat ID  
+- Configuring environment variables  
+- Troubleshooting common issues  
+
+---
+
+## License
+
+MIT License © 2025 Adi Zigelman
