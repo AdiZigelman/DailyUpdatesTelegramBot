@@ -2,11 +2,8 @@ import requests
 from telegram import Bot
 import os
 import sys
-from dotenv import load_dotenv
 import asyncio
 import feedparser
-
-load_dotenv()
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
